@@ -3,7 +3,10 @@
 #include <time.h>
 int main()
 {
-
+    char name[20];
+    printf("What is your name?\n");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
     printf("Rolling dice...\n");
     int die1, die2, total;
     srand((unsigned int)time(NULL));
